@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="images/favicon_io/site.webmanifest">
+
+    <title>Guess the Digits</title>
+
+</head>
+<body>
+  <h1>Guess the Digits</h1>
+  <div class="container">
+    <div class="instructions">
+      <p id="instructions">Given a digit between 1&ndash;9, enter a number that sums up to the same digit.</p>
+    </div>
+      
+      <div class="sumDigi">
+        <p id="tree0"></p>
+        <br>
+        <p id="tree1"></p>
+      
+      
+      <!--<p id="digitsBtn"><span>Sum of Digits</span>
+            <button id="sumButton" onclick="sumOfDigits()" >=</button>
+            <span id="sumResult" name="sumResult" value="0"></span></p>-->
+      </div>
+    
+<div class="section-1">
+   <div class="digit">
+    <p class="info infoRan">Here's your digit&hellip;</p>
+    <p id="randomNum"></p>
+   </div>
+   <!--<button id="randBtn" onclick="ranNumber()">Random Number</button>--> 
+
+<div class="inputGroup">
+  <div class="info info1">
+    <p>Enter your number:<br></p>
+  </div>
+  <input required type="text" name="userNum" class="box" id="userNum" size="17" pattern=".{2,}" maxlength="14" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/^0/, '').replace(/(\..*)\./g, '$1')">
+<br>   
+<button id="firstButton" onclick="treeResult4()" disabled>Enter</button>
+<p class="info" id="replacementText"></p>
+
+
+   <!-- <span id="numResult" name="numResult"></span> -->
+</div>
+</div>
+<!-- <div class="section-2">
+  <div class="info info2">
+<p>Add the individual digits of the result.</p>
+</div>
+
+</div>-->
+
+  <div class="section-3">
+   <div class="info info4">
+    <!--  <p>Sum of digits&hellip;</p>-->
+        </div> 
+<div class="section-4">
+  <!--<button class="magicButton" id="magicButton" onclick="treeResult4()" >View Sums</button>-->
+<div class="treeOnly">
+  <p id="tree3"></p>
+  <p id="tree3-1"></p>
+  <p id="tree4"></p>
+</div>
+  </div>
+</div>
+<div class="reset">
+  <button id="resetBtn" onclick="reset()" >Reset</button>
+</div>  
+<footer>Guess the Digits 2023</footer>
+  </div>
+  
+ 
+    <script type="text/javascript" src="scripts.js">
+</script>
+
+</body>
+</html>
