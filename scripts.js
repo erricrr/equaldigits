@@ -21,6 +21,7 @@ let revealText = document.querySelector(".info4")
 
 const firstButton = document.getElementById("firstButton")
 const replacementText = document.getElementById("replacementText")
+const challengeText = document.getElementById("challenge")
 const sumButton = document.getElementById("sumButton")
 const magicButton = document.querySelector(".magicButton")
 
@@ -46,6 +47,7 @@ inputBox.addEventListener("input", function() {
 	treeBranch4.textContent = " "
 	answerOut.style.backgroundColor = '#7149C6';
 	replacementText.innerHTML = " "
+	challengeText.innerHTML = " "
 })
 
 
@@ -175,15 +177,25 @@ randomNum.textContent = ranNumber()
 
 let ranNumberVar = randomNum.textContent
 
+
 function matchTest() {
 
-	if (ranNumberVar == sumOfDigits()) {
+	if (ranNumberVar == sumOfDigits() && numString().length < 3) {
+		answerOut.style.backgroundColor = '#48A14D';
+
+		challengeText.innerHTML = "Challenge yourself: Enter a number with more than 2 digits!";
+
+		treeBranch1.innerHTML = "Excellent!";
+
+		resultSums.innerHTML =  ranNumberVar + " " + "=" + " " + sumOfDigits();
+
+	} else if (ranNumberVar == sumOfDigits()) {
 		answerOut.style.backgroundColor = '#48A14D';
 		treeBranch1.textContent = "You know your digits!";
 
 		resultSums.innerHTML =  ranNumberVar + " " + "=" + " " + sumOfDigits();
 
-	} else {
+	} else if (ranNumberVar != sumOfDigits()) {
 		answerOut.style.backgroundColor = '#D61A3C';
 		treeBranch1.innerHTML = "Oops! Guess again or select &ldquo;Reset&rdquo; for a new digit!";
 
