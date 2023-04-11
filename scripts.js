@@ -237,6 +237,10 @@ function reset() {
 	treeBranch31.textContent = " "
 	treeBranch4.textContent = " "
 
+	answerOut.style.backgroundColor = '#7149C6';
+	replacementText.innerHTML = " "
+	challengeText.innerHTML = " "
+
 	firstButton.disabled = true
 /*	firstButton.disabled = true
 	sumButton.disabled = true
