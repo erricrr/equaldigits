@@ -183,7 +183,7 @@ function matchTest() {
 	if (ranNumberVar == sumOfDigits() && numString().length < 3) {
 		answerOut.style.backgroundColor = '#48A14D';
 
-		challengeText.innerHTML = "Challenge yourself: Enter a number with more than 2 digits!";
+		challengeText.innerHTML = "Challenge yourself: Enter a number with more than two digits!";
 
 		treeBranch1.innerHTML = "Excellent!";
 
