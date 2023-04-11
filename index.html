@@ -45,7 +45,7 @@
   <div class="info info1">
     <p>Enter your number:<br></p>
   </div>
-  <input required type="text" name="userNum" class="box" id="userNum" size="17" pattern=".{2,}" maxlength="14" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/^0/, '').replace(/(\..*)\./g, '$1')">
+  <input required type="text" name="userNum" class="box" id="userNum" size="17" pattern=".{2,}" maxlength="14" oninput="this.value = this.value.replace(/[^1-9]/g, '').replace(/^0/, '').replace(/(\..*)\./g, '$1')">
 <br>   
 <button id="firstButton" onclick="treeResult4()" disabled>Enter</button>
 <p class="info" id="replacementText"></p>
