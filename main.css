@@ -422,7 +422,7 @@ textarea:focus, input:focus{
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 200px;
+  width: 110px;
   background-color: var(--crazy-color1);
   color: var(--crazy-color2);
   text-align: center;
@@ -529,13 +529,9 @@ textarea:focus, input:focus{
     font-size: 0.9rem;
   }
 
- /* #replacementText {
-    padding-top: 5px;
-  }
-  
-  #firstButton {
-    margin-top: 3rem
-  } */
+  .tooltip .tooltiptext {
+    width: 80px;
+    font-size: 0.7rem;  }
 
 }
 

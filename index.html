@@ -44,11 +44,12 @@
 
 <div class="inputGroup">
   <div class="info info1">
-    <p>Enter your number: <span role="img" aria-label="information on number restrictions" class="tooltip">&#9432;
-      <span class="tooltiptext">Number zero (0) is restricted.</span>
-    </span><br></p>
+    <p>Enter your number <span role="img" aria-label="down arrow with information on number restriction" class="tooltip">&darr;
+      <span class="tooltiptext">Does not accept zeros.</span>
+    </span></p>
   </div>
-  <input required type="text" name="userNum" class="box" id="userNum" size="17" pattern=".{2,}" maxlength="14" oninput="this.value = this.value.replace(/[^1-9]/g, '').replace(/(\..*)\./g, '$1')">
+  <input required type="text" name="userNum" class="box" id="userNum" size="17"  maxlength="14" 
+  oninput="this.value = this.value.replace(/[^1-9]/g, '')">
 <br>   
 <button id="firstButton" onclick="treeResult4()" disabled>Enter</button>
 <p class="info" id="replacementText"></p>
