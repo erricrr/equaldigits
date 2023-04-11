@@ -167,7 +167,13 @@ footer {
  
   }
 
+#instructions {
+  margin: 1rem;
+}
 
+#tree0 {
+  margin-top: 1rem;
+}
 
 .section-1 {   
   margin-top: 8rem;
@@ -327,12 +333,6 @@ font-weight: 600;
 }
 
 
-button {
-    border-radius: 0.25rem;
-    border: none;
-    font-size: 1rem;
-}
-
 button:disabled  {
   background: var(--crazy-colorDis);
   cursor: default;
@@ -363,8 +363,12 @@ Input:invalid:focus {
 button {
   cursor: pointer;
   margin: 15px;
-  padding: 0 5px;
+  padding: 5px 10px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 1rem;
+
 }
 
 button:enabled {
@@ -527,6 +531,14 @@ textarea:focus, input:focus{
 */
   .info, button {
     font-size: 0.9rem;
+  }
+
+  #instructions {
+    margin: 0rem;
+  }
+  
+  #tree0 {
+    margin-top: 0rem;
   }
 
   .tooltip .tooltiptext {
