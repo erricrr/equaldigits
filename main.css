@@ -91,14 +91,16 @@
     font-size: 14vw;
   }
 
+  a {
+    color: var(--crazy-color2);
+  }
 
 a:link {
-  color: var(--crazy-color2);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: var(--crazy-color1);
+  color: var(--crazy-colorDis);
 }
 
 .container {
