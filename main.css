@@ -206,7 +206,8 @@ align-self: start;
 
 .infoRan {
   padding: 2rem 1rem 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
   color: var(--crazy-color5);
 
 
@@ -231,14 +232,13 @@ align-self: start;
   font-size: 1.5em;
 }
 
-.info {
-  color: var(--crazy-color5); 
-  font-size: 1rem;
 
-}
 
 #replacementText {
+  font-weight: 400;
+  font-size: 1.3rem;
   margin-top: -3rem;
+  color: var(--crazy-color5); 
 }
 
 #firstButton {
@@ -532,7 +532,7 @@ margin-left: 10px;
     padding: 1.5rem 0.75rem 0.5rem 0.75rem;
   }
 */
-  .info, button {
+  button {
     font-size: 0.9rem;
   }
 
@@ -546,6 +546,7 @@ margin-left: 10px;
 
   #replacementText {
     margin-top: -3.5rem;
+    font-size: 1.1rem;
   }
 
   .tooltip .tooltiptext {
@@ -555,6 +556,7 @@ margin-left: 10px;
 
   .infoRan1 {
     margin-top: -15px;
+    font-size: 1.1rem;
    
   }
 
@@ -582,8 +584,10 @@ h1 {
   clip: rect(1px,1px,1px,1px);
 }
 
-a[target="_blank"]::after {
+/* a[target="_blank"]::after {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
   color: var(--crazy-color2);
   margin: 0 3px 0 5px;
-}
+}*/
+
+
