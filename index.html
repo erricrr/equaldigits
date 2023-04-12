@@ -11,14 +11,14 @@
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
 <link rel="manifest" href="images/favicon_io/site.webmanifest">
 
-    <title>Guess the Digits</title>
+    <title>Match the Digit</title>
 
 </head>
 <body>
-  <h1>Guess the Digits</h1>
+  <h1>Match the Digit</h1>
   <div class="container">
     <div class="instructions">
-      <p id="instructions">Given a digit between 1&ndash;9, enter a number that sums up to the same digit.</p>
+      <p id="instructions">Can you find a number whose <a href="https://erricrr.github.io/sumofdigits/" target="_blank">sum of all digits</a> is equal to a random number?</p>
       
     </div>
       
@@ -37,15 +37,17 @@
     
 <div class="section-1">
    <div class="digit">
-    <p class="info infoRan">Here's your digit&hellip;</p>
+    <p class="infoRan infoRan1">Here's a random number between 1&ndash;9&hellip;</p>
     <p id="randomNum"></p>
    </div>
    <!--<button id="randBtn" onclick="ranNumber()">Random Number</button>--> 
 
 <div class="inputGroup">
-  <div class="info info1">
-    <p>Enter your number <span role="img" aria-label="down arrow with information on number restriction" class="tooltip">&darr;
-      <span class="tooltiptext">Does not accept zeros.</span>
+  <div class="infoRan">
+    <p>Enter your number: <span role="img" aria-label="information on number requirements" class="tooltip">&#9432;
+      <span class="tooltiptext">
+      	&#x25cf; Must enter at least a 2-digit number<br>&#x25cf; Zeros are not accepted
+      </span>
     </span></p>
   </div>
   <input required type="text" name="userNum" class="box" id="userNum" size="17"  maxlength="14" 
@@ -81,7 +83,7 @@
 <div class="reset">
   <button id="resetBtn" onclick="reset()">Reset</button>
 </div>  
-<footer>Guess the Digits 2023</footer>
+<footer>Match the Digit 2023</footer>
   </div>
   
  
