@@ -82,32 +82,34 @@
     content: 'Match the Digit';
     z-index: -1;
 
-    top: 0px;
-    left: 30px;
+    top: -40px;
+    left: 110px;
 
     color: var(--crazy-color2);
     background-color: var(--crazy-color5);
     font-family: var(--font1);
-    font-size: 14vw;
+    font-size: 19vw;
   }
 
   a {
-    color: var(--crazy-color2);
+    color: var(--crazy-color5);
+    text-decoration: underline;
   }
 
-a:link {
-  text-decoration: underline;
+a:hover {
+  color: var(--crazy-color1);
 }
 
-a:hover {
-  color: var(--crazy-colorDis);
+span#newWindow {
+vertical-align:super;  
+font-size: xx-small;
+
 }
 
 .container {
   font-family: var(--font2);
   text-align: center;
   font-size: 1rem;
-  margin-top: 30px;
 
   display: grid;
   gap: 1em;
@@ -115,12 +117,12 @@ a:hover {
   justify-content: center;
 
 
-  grid-template-columns: 1.5em 0.75fr 1fr 1.5em;
+  grid-template-columns: 1.5em 1.2fr 1fr 1.5em;
    grid-template-areas: 
-   ". . . ."
-   "... instruct  section1 ... "
-   "... instruct tree ... "
-   "... answerFeedback  tree ..."
+   " . . . ."
+   "...   section1 . ... "
+   "...   section1 answerFeedback ... "
+   "...   section1  answerFeedback ..."
    "...  buttonReset buttonReset ..."
    "footer footer footer footer"
    ;
@@ -138,7 +140,7 @@ footer {
 
 }
 
-.instructions {
+/*.instructions {
   grid-area: instruct;
 
   align-self: end;
@@ -152,45 +154,39 @@ footer {
   border-radius: var(--boxRadius);
   padding: 25px;
 
+  #instructions {
+  margin: 1rem;
 }
+
+}*/
 
 .sumDigi {
   font-weight: 600;
   font-size: 1.5rem;
   grid-area: answerFeedback;
   color: var(--crazy-color2);
-  align-self: center;
-
-
+ 
   background-color: var(--crazy-color5);
   border-radius: var(--boxRadius);
-
-  padding: 25px;
- 
+  padding: 25px; 
   }
 
-#instructions {
-  margin: 1rem;
-}
+ 
+ 
+  #tree1, #challenge {
+    margin-bottom: -15px;
+  }
 
-#tree0 {
-  margin-top: 1rem;
-}
 
 .section-1 {   
   margin-top: 8rem;
-  margin-bottom: -1rem;
   background-color: var(--crazy-color2);
   grid-area: section1;
- padding: 10px;
-justify-self: stretch;
-align-self: start;
+  padding: 10px;
 
   border-radius: var(--boxRadius);
 
-
    display: grid;
-   
    grid-template-columns: 1fr;
    grid-template-areas: 
    "digit"
@@ -219,26 +215,30 @@ align-self: start;
 
 }
 
-
 .inputGroup {
   grid-area: inputNum;
   margin-bottom: 10px;
 
 }
 
-
-#randomNum {
+.randomNum {
   font-weight: 600;
   font-size: 1.5em;
 }
 
 
+.treeOnly {
+  color: var(--crazy-color1);
+  font-size: 1.2rem;
+  padding-top: 20px;
+  font-weight: 600;
+
+}
 
 #replacementText {
   font-weight: 400;
   font-size: 1.3rem;
   margin-top: -3rem;
-  color: var(--crazy-color5); 
 }
 
 #firstButton {
@@ -282,7 +282,7 @@ align-self: start;
     justify-self: center;
 }
 
-.section-3 {
+/*.section-3 {
     grid-area: tree;
     border-radius: var(--boxRadius);
     background-color: var(--crazy-color5);
@@ -291,7 +291,7 @@ align-self: start;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-   /* "info4" */
+   "info4"
     "sumTree";
 }
 /*.info3 {
@@ -300,31 +300,19 @@ align-self: start;
 
 }*/
 
-/*.info4 {
-  grid-area: info4;
-  align-self: start;
-  color: var(--crazy-color5);
 
-
+/*.info, .section-4 {
+  font-size: 1.2rem;
 }*/
 
-.info, .section-4 {
-  font-size: 1.2rem;
-}
 
-
-.treeOnly {
-  color: var(--crazy-color2);
-font-weight: 600;
-
-}
-.section-4 {
+/*.section-4 {
   
   padding: 1rem 1.5rem;
 
   grid-area: sumTree;
 
-}
+}*/
 
 
 
@@ -454,102 +442,43 @@ margin-left: 10px;
 @media only screen and (max-width: 946px) {
 
   .container:before {
-    top: 10px;
-    left: 85px;
+    top: 7px;
+    left: 40px;
   }
 
 
   .container {
     grid-template-columns: 1.5em 1fr 1.5em;
      grid-template-areas: 
-     ". . ."
-     "... instruct  ... "
      "... section1  ..."
-     "...  tree  ..."
-     "... tree  ... "
      ". answerFeedback ."
     "...   buttonReset ..."
      "footer footer footer"
      ;
      font-size: 0.9rem;
-     align-content: start;
-  margin-top: 0px;
 
-     justify-items: center;
-
-    
   }
 
+  #challenge{
+    margin-bottom: 0.25px;
+  }
 
-.instructions {
-  margin-top: 100px;
-  font-size: 1.1rem;
-
+#tree0 {
+  margin-top: -5px
 }
-
 .sumDigi {
   font-size: 1.1rem;
 }
 
- .section-1 {
-  margin-top: -1px;
-  justify-self: center;
-  margin-bottom: -0.75rem;
- }
-
-  
-  .digit {
-    margin-top: 15px;
-  }
-
-
-  
-
-
-.section-4 {
-  padding: .75rem 1.5rem;
-  margin-bottom: -1rem;
- 
+.digit {
+  margin-top: 15px;
 }
 
-
-  .info1 {
-    margin-top: 10px;
-  }
-
- 
-
-  .info4 {
-    margin-top: -10px;
-    padding-bottom: 0.5rem;
-  }
-
-  .info, .section-4 {
-    font-size: 1rem;
-  }
-
- /* .info2 {
-    padding: 1.5rem 0.75rem 0.5rem 0.75rem;
-  }
-*/
   button {
     font-size: 0.9rem;
   }
 
-  #instructions {
-    margin: 0rem;
-  }
-  
-  #tree0 {
-    margin-top: 0rem;
-  }
-
-  #replacementText {
-    margin-top: -3.5rem;
-    font-size: 1.1rem;
-  }
-
-  .tooltip .tooltiptext {
+.tooltip .tooltiptext {
     width: 120px;
     font-size: 0.7rem;  
   }
@@ -559,15 +488,20 @@ margin-left: 10px;
     font-size: 1.1rem;
   }
 
-}
-
-/*@media only screen and (max-width: 600px) {
-  .container {
-    font-size: 0.8rem;
+  .treeOnly {
+    font-size: 1.1rem;
+  
+  }
+  
+  #replacementText {
+    margin-top: -50px;
+    font-size: 1.1rem;
+ 
   }
 
-  
-} */
+}
+
+
 
 /* Acessibility */
 h1 {

@@ -11,7 +11,7 @@ let treeBranch3 = document.getElementById("tree3")
 let treeBranch31 = document.getElementById("tree3-1")
 let treeBranch4 = document.getElementById("tree4")
 
-let randomNum = document.getElementById("randomNum")
+let randomNum = document.querySelector(".randomNum")
 let inputBox = document.querySelector(".box")
 
 let resultSums = document.getElementById("tree0")
@@ -169,7 +169,7 @@ if (lastDigits.length == 3) {
 
 //Random number from 1-9
 function ranNumber() {
-    let firstNum = Math.floor(Math.random() * 9) + 1
+    let firstNum = Math.floor(Math.random() * 8) + 2
 	//console.log(firstNum)
 	return firstNum
 }
@@ -183,7 +183,7 @@ function matchTest() {
 	if (ranNumberVar == sumOfDigits() && numString().length < 3) {
 		answerOut.style.backgroundColor = '#48A14D';
 
-		challengeText.innerHTML = "Challenge yourself: Enter a number with more than two digits!";
+		challengeText.innerHTML = "Challenge: Try a number with more than two digits.";
 
 		treeBranch1.innerHTML = "Excellent!";
 
@@ -197,7 +197,7 @@ function matchTest() {
 
 	} else if (ranNumberVar != sumOfDigits()) {
 		answerOut.style.backgroundColor = '#D61A3C';
-		treeBranch1.innerHTML = "Oops! Guess again or select &ldquo;Reset&rdquo; to get a new random number!";
+		treeBranch1.innerHTML = "Oops! Try again or select &ldquo;Reset&rdquo; to get a new digit!";
 
 		resultSums.innerHTML =  ranNumberVar + " " + "&ne;" + " " + sumOfDigits();
 
@@ -215,10 +215,10 @@ function treeResult4() {
 	let numArrResult = numString()
 	treeResult3(numArrResult)
 
-	revealText.style.color = '#FFDEB9';
+	revealText.style.color = '#7149C6';
 	firstButton.disabled = true; 
 
-	replacementText.innerHTML = "Sum of digits&hellip;"
+	replacementText.innerHTML = "Sum of all digits&hellip;"
 	
 	//limitOneClick.disabled = true
 }
