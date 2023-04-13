@@ -164,7 +164,7 @@ footer {
   font-size: 1.2rem;
   grid-area: answerFeedback;
   color: var(--crazy-color2);
-  align-self: end;
+  align-self: start;
   justify-self: start;
  
   background-color: var(--crazy-color5);
@@ -184,7 +184,7 @@ footer {
   grid-area: section1;
   padding: 10px;
 
-  align-self: end;
+  align-self: center;
   justify-self: end;
 
   border-radius: var(--boxRadius);
@@ -207,8 +207,6 @@ footer {
   padding: 2rem 1rem 2rem 1rem;
   font-size: 1rem;
   color: var(--crazy-color5);
-
-
 }
 
 .info1 {
@@ -285,6 +283,7 @@ footer {
     grid-area: buttonReset;
     border-radius: var(--boxRadius);
     justify-self: center;
+    align-self: start;
 }
 
 /*.section-3 {
@@ -466,14 +465,14 @@ margin-left: 10px;
 
   .sumDigi {
     justify-self: center;
-    align-self: center;
+    align-self: start;
   }
   
 .section-1 {
   margin-top: 8rem;
 
   justify-self: center;
-  align-self: center;
+  align-self: end;
 }
 
 #tree0 {
