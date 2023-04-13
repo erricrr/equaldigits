@@ -11,7 +11,7 @@ let treeBranch3 = document.getElementById("tree3")
 let treeBranch31 = document.getElementById("tree3-1")
 let treeBranch4 = document.getElementById("tree4")
 
-let randomNum = document.querySelector(".randomNum")
+let randomNum = document.getElementById("randomNum")
 let inputBox = document.querySelector(".box")
 
 let resultSums = document.getElementById("tree0")

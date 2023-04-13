@@ -221,9 +221,10 @@ footer {
 
 }
 
-.randomNum {
+#randomNum {
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  color: var(--crazy-color1);
 }
 
 
