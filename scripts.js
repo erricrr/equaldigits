@@ -48,6 +48,7 @@ inputBox.addEventListener("input", function() {
 	answerOut.style.backgroundColor = '#7149C6';
 	replacementText.innerHTML = " "
 	challengeText.innerHTML = " "
+	resultSums.innerHTML = " "
 })
 
 
@@ -240,6 +241,7 @@ function reset() {
 	answerOut.style.backgroundColor = '#7149C6';
 	replacementText.innerHTML = " "
 	challengeText.innerHTML = " "
+	resultSums.innerHTML = " "
 
 	firstButton.disabled = true
 /*	firstButton.disabled = true
