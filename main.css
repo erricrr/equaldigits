@@ -248,7 +248,10 @@ footer {
 #challenge {
   color: var(--crazy-color2);
   font-size: medium;
+  margin-bottom: 0.25px;
+
 }
+
 
 /*.section-2 {
     border-radius: var(--boxRadius);
@@ -459,9 +462,7 @@ margin-left: 10px;
 
   }
 
-  #challenge{
-    margin-bottom: 0.25px;
-  }
+  
 
 #tree0 {
   margin-top: -5px
