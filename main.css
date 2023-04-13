@@ -161,7 +161,6 @@ footer {
 }*/
 
 .sumDigi {
-  font-size: 1.2rem;
   grid-area: answerFeedback;
   color: var(--crazy-color2);
   align-self: start;
@@ -205,7 +204,6 @@ footer {
 
 .infoRan {
   padding: 2rem 1rem 2rem 1rem;
-  font-size: 1rem;
   color: var(--crazy-color5);
 }
 
@@ -223,7 +221,7 @@ footer {
 
 #randomNum {
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.2rem;
   color: var(--crazy-color1);
 }
 
