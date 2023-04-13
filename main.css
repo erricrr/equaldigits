@@ -82,8 +82,8 @@
     content: 'Match the Digit';
     z-index: -1;
 
-    top: -40px;
-    left: 110px;
+    top: -10px;
+    left: 80px;
 
     color: var(--crazy-color2);
     background-color: var(--crazy-color5);
@@ -161,10 +161,11 @@ footer {
 }*/
 
 .sumDigi {
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   grid-area: answerFeedback;
   color: var(--crazy-color2);
+  align-self: end;
+  justify-self: start;
  
   background-color: var(--crazy-color5);
   border-radius: var(--boxRadius);
@@ -179,10 +180,12 @@ footer {
 
 
 .section-1 {   
-  margin-top: 8rem;
   background-color: var(--crazy-color2);
   grid-area: section1;
   padding: 10px;
+
+  align-self: end;
+  justify-self: end;
 
   border-radius: var(--boxRadius);
 
@@ -201,9 +204,8 @@ footer {
 }
 
 .infoRan {
-  padding: 2rem 1rem 0.5rem 1rem;
-  font-size: 1.3rem;
-  font-weight: 400;
+  padding: 2rem 1rem 2rem 1rem;
+  font-size: 1rem;
   color: var(--crazy-color5);
 
 
@@ -223,22 +225,21 @@ footer {
 
 #randomNum {
   font-weight: 600;
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: var(--crazy-color1);
 }
 
 
 .treeOnly {
   color: var(--crazy-color1);
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-top: 20px;
   font-weight: 600;
 
 }
 
 #replacementText {
-  font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-top: -3rem;
 }
 
@@ -443,11 +444,11 @@ margin-left: 10px;
 /*media Qs*/
 
   
-@media only screen and (max-width: 946px) {
+@media only screen and (max-width: 860px) {
 
   .container:before {
-    top: 7px;
-    left: 40px;
+    top: 20px;
+    left: 43px;
   }
 
 
@@ -463,14 +464,22 @@ margin-left: 10px;
 
   }
 
+  .sumDigi {
+    justify-self: center;
+    align-self: center;
+  }
   
+.section-1 {
+  margin-top: 8rem;
+
+  justify-self: center;
+  align-self: center;
+}
 
 #tree0 {
   margin-top: -5px
 }
-.sumDigi {
-  font-size: 1.1rem;
-}
+
 
 .digit {
   margin-top: 15px;
@@ -485,19 +494,9 @@ margin-left: 10px;
     font-size: 0.7rem;  
   }
 
-  .infoRan {
-    margin-top: -15px;
-    font-size: 1.1rem;
-  }
-
-  .treeOnly {
-    font-size: 1.1rem;
-  
-  }
   
   #replacementText {
     margin-top: -50px;
-    font-size: 1.1rem;
  
   }
 
