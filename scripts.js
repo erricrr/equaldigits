@@ -206,9 +206,11 @@ function matchTest() {
 
 }
 
-
+answerOut.style.display = "none";
 //Full Tree
 function treeResult4() {
+
+	answerOut.style.display = "initial";
 	
 	matchTest()
 	//treeBranch1.textContent = treeResult1()

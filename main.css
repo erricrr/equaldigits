@@ -81,9 +81,9 @@
     position: absolute;
     content: 'Match the Digit';
     z-index: -1;
-
-    top: -10px;
-    left: 80px;
+line-height: 0.8;
+    top: 75px;
+    left: 500px;
 
     color: var(--crazy-color2);
     background-color: var(--crazy-color5);
@@ -182,7 +182,7 @@ footer {
   background-color: var(--crazy-color2);
   grid-area: section1;
   padding: 10px;
-
+  
   align-self: center;
   justify-self: end;
 
@@ -441,8 +441,8 @@ margin-left: 10px;
 @media only screen and (max-width: 860px) {
 
   .container:before {
-    top: 20px;
-    left: 43px;
+    top: 50px;
+    left: 40px;
   }
 
 
