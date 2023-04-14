@@ -198,7 +198,7 @@ function matchTest() {
 
 	} else if (ranNumberVar != sumOfDigits()) {
 		answerOut.style.backgroundColor = '#D61A3C';
-		treeBranch1.innerHTML = "Oops! Try again or select &ldquo;Reset&rdquo; to get a new digit!";
+		treeBranch1.innerHTML = "Oops! Try again or select &ldquo;Reset&rdquo; to get a new digit.";
 
 		resultSums.innerHTML =  ranNumberVar + " " + "&ne;" + " " + sumOfDigits();
 
