@@ -228,14 +228,12 @@ footer {
 
 .treeOnly {
   color: var(--crazy-color1);
-  font-size: 1rem;
   padding-top: 20px;
   font-weight: 600;
 
 }
 
 #replacementText {
-  font-size: 1rem;
   margin-top: -3rem;
 }
 
@@ -245,7 +243,6 @@ footer {
 
 #challenge {
   color: var(--crazy-color2);
-  font-size: medium;
   margin-bottom: 0.25px;
 
 }
