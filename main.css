@@ -229,11 +229,13 @@ footer {
   color: var(--crazy-color1);
   padding-top: 20px;
   font-weight: 600;
+  font-size: 1.2rem;
 
 }
 
 #replacementText {
   margin-top: -3rem;
+  font-size: 0.5rem
 }
 
 #firstButton {
