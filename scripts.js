@@ -45,12 +45,12 @@ inputBox.addEventListener("input", function() {
 	treeBranch3.textContent = " "
 	treeBranch31.textContent = " "
 	treeBranch4.textContent = " "
-	answerOut.style.backgroundColor = '#7149C6';
+	
 	replacementText.innerHTML = " "
 	challengeText.innerHTML = " "
 	resultSums.innerHTML = " "
-})
 
+})
 
 
 
@@ -181,36 +181,30 @@ let ranNumberVar = randomNum.textContent
 
 function matchTest() {
 
-	if (ranNumberVar == sumOfDigits() && numString().length < 3) {
+	if (ranNumberVar == sumOfDigits()) {
 		answerOut.style.backgroundColor = '#48A14D';
 
-		challengeText.innerHTML = "Challenge: Try a number with more than two digits.";
-
-		treeBranch1.innerHTML = "Excellent!";
+		treeBranch1.innerHTML = "Equal!";
+		
+		challengeText.innerHTML = "Try another number or select &ldquo;Reset&rdquo; for a different random digit.";
 
 		resultSums.innerHTML =  ranNumberVar + " " + "=" + " " + sumOfDigits();
 
-	} else if (ranNumberVar == sumOfDigits()) {
-		answerOut.style.backgroundColor = '#48A14D';
-		treeBranch1.textContent = "You know your digits!";
-
-		resultSums.innerHTML =  ranNumberVar + " " + "=" + " " + sumOfDigits();
-
-	} else if (ranNumberVar != sumOfDigits()) {
+	} else {
 		answerOut.style.backgroundColor = '#D61A3C';
-		treeBranch1.innerHTML = "Oops! Try again or select &ldquo;Reset&rdquo; for a different random digit.";
-
+		treeBranch1.innerHTML = "Not equal.";
+		
+		challengeText.innerHTML = "Try again or select &ldquo;Reset&rdquo; for a different random digit.";
 		resultSums.innerHTML =  ranNumberVar + " " + "&ne;" + " " + sumOfDigits();
 
 	}
 
 }
 
-answerOut.style.display = "none";
+answerOut.style.display = "none"
 //Full Tree
 function treeResult4() {
-
-	answerOut.style.display = "initial";
+	answerOut.style.display = "block"
 	
 	matchTest()
 	//treeBranch1.textContent = treeResult1()
@@ -240,7 +234,7 @@ function reset() {
 	treeBranch31.textContent = " "
 	treeBranch4.textContent = " "
 
-	answerOut.style.backgroundColor = '#7149C6';
+	answerOut.style.display = 'none';
 	replacementText.innerHTML = " "
 	challengeText.innerHTML = " "
 	resultSums.innerHTML = " "
