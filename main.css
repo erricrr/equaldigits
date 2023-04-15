@@ -68,16 +68,16 @@ html{
  
   .container:before {
     position: absolute;
-    content: 'Match the Digit';
+    content: 'Equal Digits';
     z-index: -1;
-line-height: 0.8;
-    top: 75px;
-    left: 500px;
+    line-height: 1;
+    top: 65px;
+    left: 580px;
 
     color: var(--crazy-color2);
     background-color: var(--crazy-color5);
     font-family: var(--font1);
-    font-size: 19vw;
+    font-size: 18vw;
   }
 
   a {
@@ -122,7 +122,7 @@ footer {
   padding: 30px 0;
 
   color: var(--crazy-color2);
-  background-color: var(--crazy-color5);
+  background-color: none;
   text-align: center;
   grid-area: footer;
 
@@ -431,7 +431,7 @@ margin-left: 10px;
 
   .container:before {
     top: 50px;
-    left: 40px;
+    left: 70px;
   }
 
 
