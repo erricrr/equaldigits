@@ -117,6 +117,9 @@ font-size: xx-small;
 
 }
 
+#emphasis {
+  color: var(--crazy-color1);
+}
 
 footer {
   padding: 30px 0;
