@@ -42,11 +42,14 @@ html{
       "Segoe UI Symbol", "Noto Color Emoji";
     min-height: 100%;
   }
+  
   body {
     position: relative;
     min-height: 100vh;
     font-size: 100%;
     line-height: 1.5;
+    background-color: var(--crazy-color5);
+
   }
   
   input,
