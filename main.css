@@ -44,12 +44,17 @@ html{
   }
   
   body {
-    position: relative;
     min-height: 100vh;
     font-size: 100%;
     line-height: 1.5;
     background-color: var(--crazy-color5);
 
+  }
+
+  html, body {
+    height: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
   }
   
   input,
