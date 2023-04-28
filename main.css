@@ -420,6 +420,10 @@ margin-left: 10px;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
+
+  bottom: 100%;  
+  left: 50%;  
+  margin-left: -60px;
 }
 
 .tooltip:hover .tooltiptext {
