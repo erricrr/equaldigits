@@ -50,6 +50,8 @@ inputBox.addEventListener("input", function() {
 	challengeText.innerHTML = " "
 	resultSums.innerHTML = " "
 
+	answerOut.style.display = "none"
+
 })
 
 
