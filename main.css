@@ -89,10 +89,18 @@ a:hover {
   color: var(--crazy-color1);
 }
 
-span#newWindow {
+span.newWindow {
 vertical-align:super;  
 font-size: xx-small;
 
+}
+
+#ebfooterLink {
+  color: var(--crazy-color2);
+}
+
+#ebfooterLink:hover {
+  color: var(--crazy-color1);
 }
 
 .container {
