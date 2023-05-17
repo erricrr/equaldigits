@@ -416,7 +416,7 @@ textarea:focus, input:focus{
   color: var(--crazy-color1);
 
   cursor: default;
-  font-size: small;
+  
 }
 
 .tooltip .tooltiptext {
@@ -435,6 +435,8 @@ margin-left: 10px;
   bottom: 100%;  
   left: 50%;  
   margin-left: -60px;
+
+  font-size: 0.9rem; 
 }
 
 .tooltip:hover .tooltiptext {
@@ -490,9 +492,8 @@ margin-left: 10px;
     font-size: 0.9rem;
   }
 
-.tooltip .tooltiptext {
-    width: 120px;
-    font-size: 0.7rem;  
+.tooltiptext {
+    width: 120px; 
   }
 
   
