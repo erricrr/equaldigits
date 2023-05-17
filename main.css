@@ -492,10 +492,14 @@ margin-left: 10px;
     font-size: 0.9rem;
   }
 
-.tooltiptext {
-    width: 120px; 
+  .tooltip .tooltiptext {
+    width: 145px;
   }
 
+  .tooltip .tooltiptext {
+  
+    left: 50%;  
+  }
   
   #replacementText {
     margin-top: -50px;
