@@ -494,6 +494,8 @@ margin-left: 10px;
 
   .tooltip .tooltiptext {
     width: 145px;
+
+    left: -35%;
   }
 
 
