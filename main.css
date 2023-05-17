@@ -97,10 +97,13 @@ font-size: xx-small;
 
 #ebfooterLink {
   color: var(--crazy-color2);
+  text-decoration: none;
+
 }
 
 #ebfooterLink:hover {
   color: var(--crazy-color1);
+  text-decoration: underline;
 }
 
 .container {
