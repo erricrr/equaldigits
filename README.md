@@ -1,2 +1,3 @@
 # equalDigits
- Semi-gamify sum of digits. JS practice.
+ Semi-gamify Sum of Digits project. HTML/CSS/JS practice.
+ Project URL: https://erricrr.github.io/equaldigits/
