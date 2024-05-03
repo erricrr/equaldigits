@@ -30,22 +30,17 @@
         <p id="challenge"></p>
       </div>
       
-      <!--<p id="digitsBtn"><span>Sum of Digits</span>
-            <button id="sumButton" onclick="sumOfDigits()" >=</button>
-            <span id="sumResult" name="sumResult" value="0"></span></p>-->
-      
     
 <div class="section-1">
    <div class="digit">
     <p class="infoRan">Here is a random digit between 2&ndash;9:</p>
     <p id="randomNum"></p>
    </div>
-   <!--<button id="randBtn" onclick="ranNumber()">Random Number</button>--> 
 <div class="inputGroup">
   
-    <p class="infoRan">Enter a number whose <a href="https://erricrr.github.io/sumofdigits/" target="_blank">sum of all digits<span class="newWindow" role="img" aria-label="link opens in new window">&#10138;</span></a> is <span id="emphasis">equal to</span> the random digit: <span role="img" aria-label="information on number requirements" class="tooltip">&#9432;
+    <p class="infoRan">Enter a number with a minimum of three digits whose <a href="https://erricrr.github.io/sumofdigits/" target="_blank">sum of all digits<span class="newWindow" role="img" aria-label="link opens in new window">&#10138;</span></a> is <span id="emphasis">equal to</span> the random digit: <span role="img" aria-label="information on number requirements" class="tooltip">&#9432;
       <span class="tooltiptext">
-      	&#x25cf; Must be at least two digits long<br>&#x25cf; Zeros are not accepted
+      	Zeros are not allowed.
       </span>
     </span></p>
  
@@ -53,7 +48,6 @@
   oninput="this.value = this.value.replace(/[^1-9]/g, '')">
 <br>   
 <button id="firstButton" onclick="treeResult4()" disabled>Enter</button>
-<!--  <p id="replacementText"></p> -->
 <div class="info4">
   <p id="replacementText"></p>
 
@@ -63,24 +57,10 @@
   <p id="tree4"></p>
 </div>
 </div> 
-   <!-- <span id="numResult" name="numResult"></span> -->
 </div>
 
 </div>
-<!-- <div class="section-2">
-  <div class="info info2">
-<p>Add the individual digits of the result.</p>
-</div>
 
-</div>-->
-
- <!--<div class="section-3">
-  
-<div class="section-4">
-  
-
-  </div>
-</div>--> 
 <div class="reset">
   <button id="resetBtn" onclick="reset()">Reset</button>
 </div>  

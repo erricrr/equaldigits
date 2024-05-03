@@ -34,9 +34,9 @@ let treeOutput = document.querySelector(".treeOutput")
 
  //Function for when input box is active
 inputBox.addEventListener("input", function() {
-	if(getNum() < 10) {
+	if(getNum() < 100) {
 		firstButton.disabled = true
-	} else if (getNum() >= 10){
+	} else if (getNum() >= 100){
 		firstButton.disabled = false
 	} 
 
