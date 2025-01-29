@@ -38,14 +38,14 @@ inputBox.addEventListener("input", function() {
 		firstButton.disabled = true
 	} else if (getNum() >= 100){
 		firstButton.disabled = false
-	} 
+	}
 
 	treeBranch1.textContent = " "
 	resultSums.innerHTML = " "
 	treeBranch3.textContent = " "
 	treeBranch31.textContent = " "
 	treeBranch4.textContent = " "
-	
+
 	replacementText.innerHTML = " "
 	challengeText.innerHTML = " "
 	resultSums.innerHTML = " "
@@ -95,7 +95,7 @@ function numString() {
 	let numArr = getSum.toString().split("").map(Number)
 
 	return numArr
-} 
+}
 
 
 //Joinging array variable: treeFun
@@ -110,14 +110,14 @@ function treeResult1() {
 let slicePart = []
 
 function treeResult3(n) {
-	
+
 			let sum = n[0] + n[1]
 			slicePart = n.slice(2, 100)
 			 slicePart.unshift(sum)
 			 result1 = slicePart.join(" + ")
 
 		treeBranch31.innerHTML += result1 + "<br>"
-		
+
 
 		if(slicePart[0] < 10) {
 			treeSlice(slicePart)
@@ -125,8 +125,8 @@ function treeResult3(n) {
 			treeSlice(slicePart)
 			treeDigits(slicePart)
 		}
-		
-		
+
+
 
 }
 
@@ -142,7 +142,7 @@ let lastDigits = []
 
 function treeDigits(n) {
 
-	lastDigits = n.toString().split("").map(Number)	
+	lastDigits = n.toString().split("").map(Number)
 	let joinDigits2 = lastDigits.join(" + ")
 
 	let sum2 = lastDigits[0] + lastDigits[1]//WHAT IF THIS RESULT IS 2 DIGITS??? WHAT If it needs to add three digits?
@@ -153,26 +153,26 @@ sumString = sum2.toString().split("").map(Number)
 let joinDigits3 = sumString.join(" + ")
 
 if (lastDigits.length == 3) {
-		
+
 	let sum4 = lastDigits[0] + lastDigits[1] + lastDigits[2]
-	
+
 	return treeBranch4.innerHTML = joinDigits2 + "<br>" + joinDigits3 + " + " + lastDigits[2] + "<br>" + sum4
-	
+
 } else if (sumString.length == 2) {
-		
+
 		let sum3 = sumString[0] + sumString[1]
-		
+
 		return treeBranch4.innerHTML = joinDigits2 + "<br>" + sum2 + "<br>" + joinDigits3 + "<br>" + sum3
-} else { 
+} else {
 		return treeBranch4.innerHTML = joinDigits2 + "<br>" + sum2
 	}
 
-	
+
 }
 
-//Random number from 1-9
+//Random number from 3-9
 function ranNumber() {
-    let firstNum = Math.floor(Math.random() * 8) + 2
+    let firstNum = Math.floor(Math.random() * 7) + 3
 	//console.log(firstNum)
 	return firstNum
 }
@@ -187,7 +187,7 @@ function matchTest() {
 		answerOut.style.backgroundColor = '#48A14D';
 
 		treeBranch1.innerHTML = "Equal!";
-		
+
 		challengeText.innerHTML = "Try another number or select &ldquo;Reset&rdquo; for a different random digit.";
 
 		resultSums.innerHTML =  ranNumberVar + " " + "=" + " " + sumOfDigits();
@@ -195,7 +195,7 @@ function matchTest() {
 	} else {
 		answerOut.style.backgroundColor = '#D61A3C';
 		treeBranch1.innerHTML = "Not equal.";
-		
+
 		challengeText.innerHTML = "Try again or select &ldquo;Reset&rdquo; for a different random digit.";
 		resultSums.innerHTML =  ranNumberVar + " " + "&ne;" + " " + sumOfDigits();
 
@@ -207,7 +207,7 @@ answerOut.style.display = "none"
 //Full Tree
 function treeResult4() {
 	answerOut.style.display = "block"
-	
+
 	matchTest()
 	//treeBranch1.textContent = treeResult1()
 	treeBranch3.textContent = treeResult1()
@@ -215,10 +215,10 @@ function treeResult4() {
 	treeResult3(numArrResult)
 
 	revealText.style.color = '#7149C6';
-	firstButton.disabled = true; 
+	firstButton.disabled = true;
 
 	replacementText.innerHTML = "Sum of all digits&hellip;"
-	
+
 	//limitOneClick.disabled = true
 }
 
@@ -245,13 +245,13 @@ function reset() {
 /*	firstButton.disabled = true
 	sumButton.disabled = true
 	magicButton.disabled = true
-	
+
 	inputBox.disabled = false
 
 	resetBtn.disabled = true
 */
 
 	//limitOneClick.disabled = true
-	//firstButton.disabled = true; 
+	//firstButton.disabled = true;
 
 }
